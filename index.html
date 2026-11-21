@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff1f4">
+  <title>A Little Something for You ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="floating-hearts" aria-hidden="true">
+    <span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span>
+  </div>
+
+  <main class="page-shell">
+    <div class="topline"><span class="tiny-heart">♥</span> A LITTLE NOTE FOR YOU <span class="tiny-heart">♥</span></div>
+
+    <section class="message-card" aria-live="polite">
+      <div class="card-glow"></div>
+      <div class="eyebrow" id="page-label">A LITTLE CONFESSION</div>
+      <h1 id="message-title"></h1>
+      <p id="message-description"></p>
+      <div class="signature" id="signature">with a little courage, ♡</div>
+    </section>
+
+    <nav class="controls" aria-label="Message navigation">
+      <button class="nav-button" id="previous" type="button" aria-label="Previous message" disabled>
+        <span aria-hidden="true">←</span>
+      </button>
+      <div class="progress-area">
+        <div class="progress-dots" id="progress-dots"></div>
+        <div class="page-count" id="page-count">01 / 05</div>
+      </div>
+      <button class="nav-button next-button" id="next" type="button" aria-label="Next message">
+        <span aria-hidden="true">→</span>
+      </button>
+    </nav>
+    <p class="hint" id="hint">Take your time. There's more…</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
